@@ -1,0 +1,78 @@
+[General]
+allow-udp-proxy=false
+bypass-tun=10.0.0.0/8,100.64.0.0/10,127.0.0.0/8,169.254.0.0/16,172.16.0.0/12,192.0.0.0/24,192.0.2.0/24,192.88.99.0/24,192.168.0.0/16,198.18.0.0/15,198.51.100.0/24,203.0.113.0/24,224.0.0.0/4,255.255.255.255/32
+dns-server=system,119.29.29.29,223.5.5.5
+host=127.0.0.1
+skip-proxy=192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,localhost,*.local,e.crashlynatics.com
+
+[Proxy]
+新加坡80免流 = vmess,139.162.52.35,80,chacha20-ietf-poly1305,"9e1a153b-d9b6-4dbc-ac49-9be14fc10d11",over-tls:false,transport:http,skip-cert-verify:0
+新加坡免流80 = vmess,139.162.52.115,80,chacha20-ietf-poly1305,"55c039ae-1b1b-48df-e91c-97f088193ba5",over-tls:false,transport:http,skip-cert-verify:0
+新加坡80免流 2 = vmess,139.162.27.123,80,chacha20-ietf-poly1305,"83cfbd87-76d4-42e6-a8ed-c946c4589c9e",over-tls:false,transport:http,skip-cert-verify:0
+东京80 = vmess,158.101.66.140,80,chacha20-ietf-poly1305,"dd178d95-05d8-4ad2-9db5-698ad840b491",over-tls:false,transport:http,skip-cert-verify:0
+东京80plus = vmess,150.230.198.11,80,chacha20-ietf-poly1305,"14470314-13c6-498a-e9c9-9a4100d896c6",over-tls:false,transport:http,skip-cert-verify:0
+首尔146-80 = vmess,193.122.108.173,80,chacha20-ietf-poly1305,"5bdb855e-822b-4c1c-e831-ba49dafca26f",over-tls:false,transport:http,skip-cert-verify:0
+首尔193-80 = vmess,146.56.182.208,80,chacha20-ietf-poly1305,"daca15f3-13dd-4ccb-a7dc-62acfb7b848d",over-tls:false,transport:http,skip-cert-verify:0
+新加坡免流 = vmess,139.162.27.187,80,chacha20-ietf-poly1305,"8062db71-89a7-46bd-811e-77455139daf5",over-tls:false,transport:http,skip-cert-verify:0
+新加坡娱乐 = vmess,139.162.52.35,47214,chacha20-ietf-poly1305,"910d3594-6708-408e-b7ec-aa8402f6dad9",over-tls:false,transport:tcp,skip-cert-verify:0
+新加坡ws节点 = vmess,139.162.52.35,27150,chacha20-ietf-poly1305,"3ac918c4-d19a-4bdb-d946-b9d1f61a042f",over-tls:false,transport:ws,path:/,host:,skip-cert-verify:0
+新加坡娱乐 2 = vmess,139.162.52.115,24003,chacha20-ietf-poly1305,"5ace5c91-2b82-4ada-9456-001dbb4164c6",over-tls:false,transport:tcp,skip-cert-verify:0
+新加坡娱乐 3 = vmess,139.162.27.123,16903,chacha20-ietf-poly1305,"e61de816-5d21-40b0-df12-0e0272b81941",over-tls:false,transport:tcp,skip-cert-verify:0
+新加坡ws = vmess,139.162.27.123,52789,chacha20-ietf-poly1305,"f4c0d570-3068-4ddd-8cfe-e897179d40ff",over-tls:false,transport:ws,path:/,host:,skip-cert-verify:0
+新加坡ws 2 = vmess,139.162.27.187,37773,chacha20-ietf-poly1305,"c9105c88-f0a8-4906-e80e-8c47d1bca686",over-tls:false,transport:ws,path:/,host:,skip-cert-verify:0
+新加坡tcp = vmess,139.162.27.187,24352,chacha20-ietf-poly1305,"81816211-7096-4b6d-a6c1-a5bdd880423a",over-tls:false,transport:tcp,skip-cert-verify:0
+首尔193 = vmess,146.56.182.208,417,chacha20-ietf-poly1305,"cadac5a3-82a2-4a4a-dd52-ef9c5294f563",over-tls:false,transport:tcp,skip-cert-verify:0
+首尔146 = vmess,193.122.108.173,157,chacha20-ietf-poly1305,"e6baa07f-ccd6-4b65-9dcd-09d722e7314a",over-tls:false,transport:tcp,skip-cert-verify:0
+ws = vmess,193.122.108.173,55055,chacha20-ietf-poly1305,"7bd0e539-e683-4c7d-e9f0-a9b812d32ce2",over-tls:false,transport:ws,path:/,host:,skip-cert-verify:0
+东京tcp = vmess,158.101.66.140,1080,chacha20-ietf-poly1305,"18be41a9-c33f-48d7-a54b-d649ef9f7fd8",over-tls:false,transport:tcp,skip-cert-verify:0
+东京ws = vmess,158.101.66.140,443,chacha20-ietf-poly1305,"23c48ffb-b653-41d3-a80a-0606f0e8093a",over-tls:false,transport:tcp,skip-cert-verify:0
+东京tcp-plus = vmess,150.230.198.11,24721,chacha20-ietf-poly1305,"518fd2b1-07e0-4f67-c406-961e6d583dd6",over-tls:false,transport:tcp,skip-cert-verify:0
+东京ws-plus = vmess,150.230.198.11,15995,chacha20-ietf-poly1305,"e8cb85e1-40a9-41e9-af69-0e3cb152969e",over-tls:false,transport:ws,path:/,host:,skip-cert-verify:0
+
+[Remote Proxy]
+
+[Proxy Group]
+Proxies = select,HK,SG,JP,US,TW,新加坡80免流,新加坡娱乐,新加坡ws节点,新加坡免流80,新加坡娱乐 2,新加坡80免流 2,新加坡娱乐 3,新加坡ws,新加坡免流,新加坡ws 2,新加坡tcp,首尔193-80,首尔193,首尔146-80,首尔146,ws,东京80,东京tcp,东京ws,东京80plus,东京tcp-plus,东京ws-plus
+Apple = select,DIRECT,Proxies
+MicroSoft = select,DIRECT,Proxies
+Telegram = select,Proxies,HK,SG
+Netflix = select,Proxies,HK,SG,JP,US,TW
+Netease = select,DIRECT,Proxies
+HKMTMedia = select,DIRECT,Proxies,HK,TW
+HK = select,DIRECT
+SG = select,新加坡80免流,新加坡娱乐,新加坡ws节点,新加坡免流80,新加坡娱乐 2,新加坡80免流 2,新加坡娱乐 3,新加坡ws,新加坡免流,新加坡ws 2,新加坡tcp
+TW = select,DIRECT
+JP = select,东京80,东京tcp,东京ws,东京80plus,东京tcp-plus,东京ws-plus
+US = select,DIRECT
+
+[Rule]
+GEOIP,CN,DIRECT
+FINAL,Proxies
+
+[Remote Rule]
+http://127.0.0.1:25500/getruleset?type=1&url=cnVsZXMvRGl2aW5lRW5naW5lL1N1cmdlL1J1bGVzZXQvR3VhcmQvSGlqYWNraW5nLmxpc3Q,REJECT
+https://subconverter.oss-ap-southeast-1.aliyuncs.com/Rules/RuleSet/ForceDirect.list,DIRECT
+https://subconverter.oss-ap-southeast-1.aliyuncs.com/Rules/RuleSet/ForceProxy.list,Proxies
+http://127.0.0.1:25500/getruleset?type=1&url=cnVsZXMvRGl2aW5lRW5naW5lL1N1cmdlL1J1bGVzZXQvRXh0cmEvQXBwbGUvQXBwbGUubGlzdA,Apple
+https://subconverter.oss-ap-southeast-1.aliyuncs.com/Rules/RuleSet/microsoft.list,MicroSoft
+https://subconverter.oss-ap-southeast-1.aliyuncs.com/Rules/RuleSet/Media/netease.list,Netease
+http://127.0.0.1:25500/getruleset?type=1&url=cnVsZXMvRGl2aW5lRW5naW5lL1N1cmdlL1J1bGVzZXQvRXh0cmEvVGVsZWdyYW0vVGVsZWdyYW0ubGlzdA,Telegram
+https://subconverter.oss-ap-southeast-1.aliyuncs.com/Rules/RuleSet/Media/netflix.list,Netflix
+https://subconverter.oss-ap-southeast-1.aliyuncs.com/Rules/RuleSet/Media/HKMTMedia.list,HKMTMedia
+http://127.0.0.1:25500/getruleset?type=1&url=cnVsZXMvRGl2aW5lRW5naW5lL1N1cmdlL1J1bGVzZXQvU3RyZWFtaW5nTWVkaWEvU3RyZWFtaW5nLmxpc3Q,Proxies
+http://127.0.0.1:25500/getruleset?type=1&url=cnVsZXMvRGl2aW5lRW5naW5lL1N1cmdlL1J1bGVzZXQvR2xvYmFsLmxpc3Q,Proxies
+http://127.0.0.1:25500/getruleset?type=1&url=cnVsZXMvTG9jYWxBcmVhTmV0d29yay5saXN0,DIRECT
+http://127.0.0.1:25500/getruleset?type=1&url=cnVsZXMvRGl2aW5lRW5naW5lL1N1cmdlL1J1bGVzZXQvVW5icmVhay5saXN0,DIRECT
+http://127.0.0.1:25500/getruleset?type=1&url=cnVsZXMvRGl2aW5lRW5naW5lL1N1cmdlL1J1bGVzZXQvQ2hpbmEubGlzdA,DIRECT
+
+[URL Rewrite]
+enable=true
+^https?:\/\/(www.)?(g|google)\.cn https://www.google.com 302
+
+[Remote Rewrite]
+https://raw.githubusercontent.com/Loon0x00/LoonExampleConfig/master/Rewrite/AutoRewrite_Example.list,auto
+
+[MITM]
+enable=true
+hostname=*.example.com,*.sample.com
+skip-server-cert-verify=true
